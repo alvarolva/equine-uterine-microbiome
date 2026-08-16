@@ -106,11 +106,11 @@ Additional tools used through QIIME2 or the command line include **DADA2, Cutada
 
 Raw sequencing data are publicly available through NCBI:
 
-**BioProject:** PRJNA1165023
+**BioProject:** [PRJNA1165023](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1165023)
 
 Additional resources required to reproduce the workflow are available on Zenodo:
 
-**Zenodo DOI:** https://doi.org/10.5281/zenodo.13847011
+**Zenodo:** [10.5281/zenodo.13847011](https://doi.org/10.5281/zenodo.13847011)
 
 These resources include the trained classifier, SILVA reference sequences, manifest, metadata and archived analysis files and should be downloaded before running the workflow.
 
@@ -119,8 +119,8 @@ These resources include the trained classifier, SILVA reference sequences, manif
 ## Running the workflow
 
 1. Install **QIIME2 2024.5**.
-2. Download the FASTQ files from **BioProject PRJNA1165023**.
-3. Download the required reference and metadata files from the associated **Zenodo repository**.
+2. Download the FASTQ files from **[BioProject PRJNA1165023](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1165023)**.
+3. Download the required reference and metadata files from the associated **[Zenodo repository](https://doi.org/10.5281/zenodo.13847011)**.
 4. Update the FASTQ paths in `manifest.csv` for your local system.
 5. Run:
 
