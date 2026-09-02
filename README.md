@@ -18,58 +18,7 @@ https://doi.org/10.1038/s41598-025-00969-5
 
 ## Workflow overview
 
-```text
-Illumina paired-end reads
-          │
-          ▼
-      QIIME2 import
-          │
-          ▼
- Cutadapt primer removal
-          │
-          ▼
-     DADA2 denoising
-          │
-          ▼
- Feature table + ASVs
-          │
-          ▼
- Non-prokaryotic sequence removal
-          │
-          ▼
- Taxonomic classification
-    SILVA / scikit-learn
-          │
-          ▼
- Chloroplast + mitochondrial removal
-          │
-          ▼
-     ASV filtering
-  abundance + prevalence
-          │
-          ├────────────────────┐
-          ▼                    ▼
-   Taxonomic tables      MAFFT alignment
-   relative/absolute            │
-                               ▼
-                         Sequence masking
-                               │
-                               ▼
-                         FastTree phylogeny
-                               │
-                               ▼
-                       Midpoint-rooted tree
-                               │
-                               ▼
-                       Diversity analyses
-                     ┌─────────┴─────────┐
-                     ▼                   ▼
-              Alpha diversity       Beta diversity
-          Shannon / Simpson / Chao1     Jaccard
-                                         │
-                                         ▼
-                                 PERMANOVA / ADONIS
-```
+![Equine uterine microbiome QIIME2 workflow](docs/workflow.png)
 
 The workflow additionally generates taxonomic abundance tables across multiple taxonomic levels for downstream analyses.
 
